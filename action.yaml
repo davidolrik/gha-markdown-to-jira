@@ -1,0 +1,16 @@
+name: "Markdown to JIRA"
+
+description: "Convert Markdown formatted text into JIRA formatted text"
+
+inputs:
+  markdown:
+    description: Text formatted in Markdown
+    required: true
+
+outputs:
+  jira-text:
+    description: Text formatted in "JIRA style"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
